@@ -32,13 +32,23 @@ const routes = [
       {
         path: '/shopchakan',
         component: () => import('../views/shopo/shopchakan.vue'),
-        
+
       },
       {
         path: '/shopxiugai',
         component: () => import('../views/shopo/shopxiugai.vue'),
-       
+
       },
+      {
+        path: '/shopadd',
+        component: () => import('../views/shopo/shopadd.vue'),
+        meta: {
+          header: false,
+          title: '商品管理',
+          item: '修改商品',
+        }
+      },
+
       {
         path: '/shopplist',
         component: () => import('../views/shopo/shopplist.vue'),

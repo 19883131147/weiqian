@@ -22,7 +22,10 @@ export const PATH = {
   ORDER: 'manage/order/list.do',
   // 上架商品
   shangjia:"/manage/product/set_sale_status.do",
-
+  setShop: '/manage/product/save.do',//修改商品
+  imgs: '/manage/product/upload.do',//上传图片
   detail: '/manage/product/detail.do',//商品详情
   category: '/manage/category/get_category.do',//品级分类
+  
+
 }

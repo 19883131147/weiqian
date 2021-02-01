@@ -2,7 +2,7 @@
   <div>
     <div class="shopp">
       <span>商品管理</span>
-      <el-button type="info">+添加商品</el-button>
+      <el-button type="info" @click="add">+添加商品</el-button>
     </div>
     <p></p>
     <el-form :inline="true" :model="formInline" class="demo-form-inline">
@@ -137,6 +137,10 @@ export default {
     set(id) {
       this.$router.push({ path: "/shopxiugai", query: { id } });
     },
+
+    add(){
+       this.$router.push("/shopadd")
+    }
   },
   data() {
     return {

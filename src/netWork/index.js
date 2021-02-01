@@ -38,6 +38,9 @@ const netClient = {
   },
   detail(id) { return request(Method.GET, PATH.detail + `?productId=${id}`) },//商品详情
   category(id) { return request(Method.GET, PATH.category + `?categoryId=${id}`) },//品级分类
+  setShop(ids, name, title, img, detail, price, num, status, id) { return request(Method.GET, PATH.setShop + `?categoryId=${ids}&name=${name}&subtitle=${title}&subImages=${img}&detail=${detail}&price=${price}&stock=${num}&status=${status}&id=${id}`) },//修改商品
+  imgs(upload_file) { return request(Method.POST, PATH.imgs, upload_file) },//上传图片
+  getShop(ids, name, title, img, detail, price, num, status) { return request(Method.GET, PATH.setShop + `?categoryId=${ids}&name=${name}&subtitle=${title}&subImages=${img}&detail=${detail}&price=${price}&stock=${num}&status=${status}`) },//添加商品
 }
 
 // 抛出netClient
