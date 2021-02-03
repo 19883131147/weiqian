@@ -77,7 +77,7 @@ export default {
       // console.log(res);
       this.info = res.data;
       this.$API.category(res.data.parentCategoryId).then((res) => {
-        // console.log(res);
+        console.log(res);
         this.option1 = res.data;
       });
     });

@@ -156,7 +156,7 @@ export default {
   },
   mounted() {
     this.$API.SHOPP().then((res) => {
-      console.log(res);
+      // console.log(res);
       this.list = res.data.data.list;
       this.total = res.data.data.total;
     });

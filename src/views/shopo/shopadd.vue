@@ -182,6 +182,7 @@ export default {
               this.$router.back();
             }
           });
+          
       } else {
         this.$API
           .getShop(
@@ -195,7 +196,7 @@ export default {
             this.form.status
           )
           .then((res) => {
-            console.log(res);
+            // console.log(res);
             if (res.status == 0) {
               this.$message(res.data);
               this.$router.back();
@@ -204,6 +205,7 @@ export default {
       }
     },
     // 删除图片
+
     setImg() {
       this.form.imgs = "";
     },
