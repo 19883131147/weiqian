@@ -52,7 +52,14 @@ const routes = [
       {
         path: '/shopplist',
         component: () => import('../views/shopo/shopplist.vue'),
-        meta: { title: "品类管理" }
+        meta: { title: "品类管理" },
+        children: [
+         
+        ]
+      },
+      {
+        path: "/shopclassify_id",
+        component: import('../views/shopo/shopclassify_id.vue'),
       },
       {
         path: '/order',

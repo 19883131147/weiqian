@@ -41,6 +41,8 @@ const netClient = {
   setShop(ids, name, title, img, detail, price, num, status, id) { return request(Method.GET, PATH.setShop + `?categoryId=${ids}&name=${name}&subtitle=${title}&subImages=${img}&detail=${detail}&price=${price}&stock=${num}&status=${status}&id=${id}`) },//修改商品
   imgs(upload_file) { return request(Method.POST, PATH.imgs, upload_file) },//上传图片
   getShop(ids, name, title, img, detail, price, num, status) { return request(Method.GET, PATH.setShop + `?categoryId=${ids}&name=${name}&subtitle=${title}&subImages=${img}&detail=${detail}&price=${price}&stock=${num}&status=${status}`) },//添加商品
+
+  setCategory(id, name) { return request(Method.GET, PATH.setCategory + `?categoryId=${id}&categoryName=${name}`) },//修改品类
 }
 
 // 抛出netClient
