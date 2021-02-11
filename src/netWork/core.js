@@ -27,5 +27,6 @@ export const PATH = {
   detail: '/manage/product/detail.do',//商品详情
   category: '/manage/category/get_category.do',//品级分类
   setCategory: '/manage/category/set_category_name.do',//修改品类
+  addCategory: '/manage/category/add_category.do',//添加品类
 
 }

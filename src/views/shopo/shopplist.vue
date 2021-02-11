@@ -2,7 +2,7 @@
   <div>
     <div class="shopp">
       <span>品类管理</span>
-      <el-button type="info">+添加品类</el-button>
+      <el-button type="info" @click="goadd">+添加品类</el-button>
     </div>
     <el-table :data="list" style="width: 100%">
       <el-table-column prop="id" label="品类ID" width="180"> </el-table-column>
@@ -95,6 +95,9 @@ export default {
         }
       });
     },
+    goadd(){
+      this.$router.push("/classify_add");
+    }
   },
   computed: {
     // resList() {

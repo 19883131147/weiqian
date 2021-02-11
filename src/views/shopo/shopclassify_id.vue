@@ -49,7 +49,7 @@ export default {
   methods: {
     // 添加
     add() {
-      //   this.$router.push();
+        this.$router.push("/classify_add");
     },
     // 修改
     set(item) {

@@ -40,6 +40,11 @@ const routes = [
 
       },
       {
+        path: '/classify_add',
+        component: () => import('../views/shopo/classify_add.vue'),
+
+      },
+      {
         path: '/shopadd',
         component: () => import('../views/shopo/shopadd.vue'),
         meta: {
@@ -49,12 +54,14 @@ const routes = [
         }
       },
 
+      
+
       {
         path: '/shopplist',
         component: () => import('../views/shopo/shopplist.vue'),
         meta: { title: "品类管理" },
         children: [
-         
+
         ]
       },
       {

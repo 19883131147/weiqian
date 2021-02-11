@@ -43,6 +43,7 @@ const netClient = {
   getShop(ids, name, title, img, detail, price, num, status) { return request(Method.GET, PATH.setShop + `?categoryId=${ids}&name=${name}&subtitle=${title}&subImages=${img}&detail=${detail}&price=${price}&stock=${num}&status=${status}`) },//添加商品
 
   setCategory(id, name) { return request(Method.GET, PATH.setCategory + `?categoryId=${id}&categoryName=${name}`) },//修改品类
+  addCategory(id, name) { return request(Method.GET, PATH.addCategory + `?parentId=${id}&categoryName=${name}`) },//添加品类
 }
 
 // 抛出netClient
