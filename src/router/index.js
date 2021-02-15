@@ -72,6 +72,11 @@ const routes = [
         path: '/order',
         component: () => import('../views/order/order.vue'),
         meta: { title: "订单管理" }
+      },
+      {
+        path: '/order_detail',
+        component: () => import('../views/order/order_detail.vue'),
+        meta: { title: "订单管理" }
       }
     ]
   },

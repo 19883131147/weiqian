@@ -44,6 +44,15 @@ const netClient = {
 
   setCategory(id, name) { return request(Method.GET, PATH.setCategory + `?categoryId=${id}&categoryName=${name}`) },//修改品类
   addCategory(id, name) { return request(Method.GET, PATH.addCategory + `?parentId=${id}&categoryName=${name}`) },//添加品类
+  order_search(name) { return request(Method.GET, PATH.order_search + `?listType=search&pageNum=1&orderNo=${name}`) },//订单搜索
+  order_detail(id) { return request(Method.GET, PATH.order_detail + `?orderNo=${id}`) },//订单详情
+
+
+
+
+
+
+
 }
 
 // 抛出netClient
